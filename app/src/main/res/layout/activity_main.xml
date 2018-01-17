@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="tugassk.enkripsiaes.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputText"
+        android:hint="Masukan Teks Untuk Di-Enkripsi"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kunci Enkripsi"
+        android:id="@+id/inputPassword"
+        android:layout_below="@+id/inputText"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/outputText"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_below="@+id/inputPassword"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/encBtn"
+        android:layout_below="@+id/outputText"
+        android:text="Enkripsi"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/decBtn"
+        android:layout_below="@+id/encBtn"
+        android:text="Dekripsi"
+        />
+
+</RelativeLayout>

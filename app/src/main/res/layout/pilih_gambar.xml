@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="tugassk.enkripsiaes.PilihGambar"
+    android:padding="20dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Kunci Enkripsi"
+        android:id="@+id/inputPassword"
+        android:layout_below="@+id/inputText"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/uri"
+        android:layout_below="@+id/inputPassword"
+        android:text="URI Kosong"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:id="@+id/ini_scroll_view"
+        android:layout_below="@id/uri">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/outputText"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="Belum Ada Hasil Enkripsi atau Gambar yang Dipilih"
+            android:textColor="@color/colorAccent"></TextView>
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/encBtn"
+        android:layout_below="@+id/ini_scroll_view"
+        android:text="Enkripsi"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/decBtn"
+        android:layout_below="@+id/encBtn"
+        android:text="Dekripsi"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pilihGambar"
+        android:layout_below="@+id/decBtn"
+        android:text="Pilih Gambar"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tampilGambar"
+        android:layout_below="@id/pilihGambar"
+        android:background="@mipmap/ic_launcher"/>
+
+</RelativeLayout>
